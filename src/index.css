@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #1E3F33; /* Dark green from image */
+  --primary-light: #2A5847;
+  --secondary: #EBE5DB; /* Cream background */
+  --accent: #E6A135; /* Orange/Yellow for accents/stars */
+  --text-dark: #1F2937;
+  --text-light: #F3F4F6;
+  --white: #FFFFFF;
+  --danger: #EF4444; /* Unsafe */
+  --safe: #22C55E; /* Safe */
+  --warning: #EAB308; /* Moderate */
+  --card-bg: rgba(255, 255, 255, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

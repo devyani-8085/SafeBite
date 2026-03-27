@@ -1,0 +1,128 @@
+.menus-page {
+  padding: 100px 5% 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.menus-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.menus-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.menus-header p {
+  color: var(--text-dark);
+  opacity: 0.7;
+  margin-bottom: 2rem;
+}
+.menu-search {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.menu-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.menu-search button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu-search button:hover {
+  background: var(--primary-light);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.menu-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: transform 0.3s;
+}
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+.menu-img {
+  width: 100%;
+  height: 200px;
+  background: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.menu-img img {
+  max-height: 100%;
+  object-fit: contain;
+}
+.menu-info {
+  padding: 1.5rem;
+}
+.menu-info h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.menu-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+.h-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.h-badge.safe {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--safe);
+}
+.h-badge.danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+.order-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.order-btn.disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
